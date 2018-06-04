@@ -4,6 +4,7 @@ RUN yum install python python-devel python-setuptools pytest -y
 #RUN pip install bottle
 RUN mkdir -p /test/project
 ADD server.py /test/project/server.py
+RUN build_fail
 #ADD tests /test/project/tests
 #ADD build_steps.sh /test/project/
 #ADD test_steps.sh /test/project/
